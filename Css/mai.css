@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"); /* Core styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanchenjunga", sans-serif;
+}
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+.main {
+  background: url(../image/background/Rectangle\ 26.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #feded5;
+  min-height: 1080px;
+}
+/* Header section styles */
+.header {
+  border-bottom: 1px solid #fff;
+}
+.header__wrapper {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.header__list {
+  display: flex;
+  gap: 40px;
+}
+.header__icon {
+  display: flex;
+  gap: 20px;
+}
+/* Home section styles */
+.home__title {
+  padding-top: 306px;
+}
+.title {
+  width: 636px;
+  height: 201;
+  color: #fff;
+  font-size: 48px;
+  line-height: 140%;
+  font-weight: 700;
+}
+.home__pleyer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.descraption {
+  width: 198px;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.cards {
+  display: flex;
+  gap: 10px;
+  padding-top: 250px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 315px;
+  height: 151px;
+  background: #8d86c9;
+}
+.card__left {
+  color: #fff;
+}
+.bottom__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.bottom__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+}
