@@ -95,3 +95,25 @@ a {
   font-weight: 700;
   line-height: 140%;
 }
+/* Adventages section styles */
+.adventage__cards {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.adventage__card > img {
+  width: 376px;
+  height: 450px;
+}
+.adventage__card--text {
+  color: #fff;
+  text-align: center;
+  font-size: 27px;
+  position: relative;
+  bottom: 150px;
+}
+.adventage__card--title {
+  text-align: center;
+  color: #fff;
+}
