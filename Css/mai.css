@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kanchenjunga", sans-serif;
+  transition: all 0.3s linear;
 }
 .container {
   max-width: 1296px;
@@ -15,7 +16,6 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #fff;
   font-size: 14px;
 }
 .main {
@@ -42,6 +42,9 @@ a {
 .header__icon {
   display: flex;
   gap: 20px;
+}
+.header__link {
+  color: #fff;
 }
 /* Home section styles */
 .home__title {
@@ -126,7 +129,12 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-
+.bottom--descraption > img {
+  right: 50px;
+  z-index: 2;
+  margin-right: -35px;
+  padding-bottom: 25px;
+}
 .about__right {
   width: 636px;
   height: 654px;
@@ -134,14 +142,9 @@ a {
   padding-top: 90px;
   padding-bottom: 90px;
   background: #f7ece1;
+  z-index: 1;
 }
-.bottom--descraption {
-  display: flex;
-  gap: 20px;
-}
-.bottom--descraption > img {
-  padding-bottom: 25px;
-}
+
 .about__top--title {
   width: 430px;
   font-size: 46px;
@@ -156,11 +159,213 @@ a {
   color: #333333;
 }
 .about__bottom--subtitle {
+  font-size: 21px;
+  font-weight: 600;
   padding: 20px 0;
 }
+.bottom--descraption > img {
+  margin-right: 20px;
+}
 .bottom--descraption {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  gap: 10px;
   width: 430px;
   color: #333333;
   font-size: 14px;
   font-weight: 400;
+}
+
+/* Propertines section styles */
+.propertines__wrapper {
+  padding: 50px 0;
+}
+.propertines__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.propertines__title {
+  color: #333333;
+  font-size: 36px;
+  font-weight: 600;
+}
+.propertines__icons {
+  display: flex;
+  gap: 10px;
+}
+.propertines__icon {
+  display: flex;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #8d86c9;
+  padding: 5px;
+}
+.propertines__icon:hover {
+  background-color: #7c6abf;
+}
+.propertines__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.team-member {
+  flex: 1 1 250px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.team-member__photo {
+  border-radius: 2px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.team-member__name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.team-member__desc {
+  font-size: 0.95rem;
+  color: #555;
+}
+/* Dervises section styles */
+.pricing-services {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pricing-services__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left block: Pricing */
+.pricing {
+  flex: 1 1 300px;
+}
+
+.pricing__title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.pricing__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing__item {
+  background-color: #8f80c9;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pricing__item:hover {
+  background-color: #7c6abf;
+}
+
+.arrow {
+  font-size: 1.2rem;
+}
+
+/* Right block: Services */
+.services {
+  flex: 1 1 500px;
+}
+
+.services__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.services__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.services__nav {
+  display: flex;
+  gap: 8px;
+}
+
+.services__btn {
+  background-color: #8f80c9;
+  color: #fff;
+  border: none;
+  padding: 9.6px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s linear;
+}
+
+.services__btn:hover {
+  background-color: #7c6abf;
+}
+
+.services__card {
+  position: relative;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+.services__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.services__caption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+/* Footer section styles */
+.footer {
+  background-color: #f7ece1;
+}
+.footer__wrapper {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__title {
+  color: #333333;
+}
+.footer__list {
+  display: flex;
+  gap: 40px;
+}
+.footer__link {
+  font-size: 14px;
+  color: #000;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
