@@ -27,7 +27,9 @@ a {
 }
 /* Header section styles */
 .header {
-  position: sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
   background: url(../image/background/Rectangle\ 26.svg);
   z-index: 1000;
