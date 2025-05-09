@@ -18,6 +18,7 @@ a {
   text-decoration: none;
   font-size: 14px;
 }
+
 .main {
   background: url(../image/background/Rectangle\ 26.svg);
   background-repeat: no-repeat;
@@ -26,7 +27,11 @@ a {
 }
 /* Header section styles */
 .header {
-  border-bottom: 1px solid #fff;
+  position: sticky;
+  top: 0;
+  background: url(../image/background/Rectangle\ 26.svg);
+  z-index: 1000;
+  border-bottom: 1px solid #f7ece1;
 }
 .header__wrapper {
   padding: 20px 0;
